@@ -5,6 +5,7 @@ import AboutUs from '../pages/AboutUs'
 import Contacts from '../pages/Contacts'
 import Address from '../pages/Address'
 import Layout from '../components/Layout'
+import Order from '../pages/Order'
 
 
 
@@ -18,6 +19,7 @@ function Routes () {
             <Route exact path="/contacts" component={Contacts}/>
             <Route exact path="/address" component={Address}/>
             <Route exact path="/about" component={AboutUs}/>
+            <Route exact path="/order" component={Order}/>
            </Layout>
         </Switch>
      </BrowserRouter>
