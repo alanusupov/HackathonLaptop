@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "email": "typicode",
+      "number": "typicode",
+      "product": "typicode",
+      "price": "typicode"
+    },
+    {
+      "id": 1599031721348,
+      "name": "adsf",
+      "number": "333",
+      "email": "ertyer@dgh.oo",
+      "product": "ddd",
+      "price": "3"
+    },
+    {
+      "id": 1599034026101,
+      "name": "Alan Usupov",
+      "number": "33",
+      "email": "usupovalan@gmail.com",
+      "product": "ad",
+      "price": "2"
+    }
+  ]
+}
