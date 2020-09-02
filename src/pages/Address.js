@@ -3,10 +3,7 @@ import React from 'react'
 function Address() {
   return (
     <div>
-      <h1>Address</h1>
-      <h1>Address</h1>
-      <h1>Address</h1>
-      <h1>Address</h1>
+      Address
     </div>
   )
 }
