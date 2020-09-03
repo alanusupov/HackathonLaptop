@@ -1,5 +1,7 @@
 import React from 'react';
 import Cards from 'react-credit-cards';
+import 'react-credit-cards/es/styles-compiled.css'
+import { FormGroup } from 'reactstrap';
 
  
 export default class PaymentForm extends React.Component {
@@ -31,7 +33,9 @@ export default class PaymentForm extends React.Component {
           name={this.state.name}
           number={this.state.number}
         />
-        <form>
+        <FormGroup className="bg-info d-flex-inline justify-content-center">
+          <h3 style={{textAlign:"center"}}>Введите данные</h3>
+        <form className="mt-3">
         	<input
             type="tel"
             name="number"
@@ -39,9 +43,33 @@ export default class PaymentForm extends React.Component {
             onChange={this.handleInputChange}
             onFocus={this.handleInputFocus}
           />
-          ...
+          
         </form>
+        <form className="mt-3">
+        	<input
+            type="tel"
+            name="number"
+            placeholder="Card Number"
+            onChange={this.handleInputChange}
+            onFocus={this.handleInputFocus}
+          />
+          
+        </form>
+        <form className="mt-3">
+        	<input
+            type="tel"
+            name="number"
+            placeholder="Card Number"
+            onChange={this.handleInputChange}
+            onFocus={this.handleInputFocus}
+          />
+          
+        </form>
+        </FormGroup>
+       
       </div>
     );
   }
 }
+
+

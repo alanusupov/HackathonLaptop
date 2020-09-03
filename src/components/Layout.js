@@ -8,7 +8,7 @@ import Header from './Header'
 function Layout(props) {
   return (
     <div>
-      <Header />
+      <Header  />
       {/* <Sidebar /> */}
       <div className="page-wrapper">
         {props.children}

@@ -1,7 +1,9 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { GrFacebook, GrTwitter, GrGooglePlus, GrInstagram,GrLinkedin } from "react-icons/gr";
-import PaymentForm from "./CreditCard";
+import Contacts from "../pages/Contacts";
+
+
 
 
 function FooterPagePro ()  {
@@ -129,10 +131,9 @@ function FooterPagePro ()  {
           &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
         </MDBContainer>
       </div>
+    <Contacts />
     </MDBFooter>
   );
 }
-
-<PaymentForm />
 
 export default FooterPagePro;

@@ -10,16 +10,18 @@ import { CgDetailsMore } from 'react-icons/cg';
 
 
 
+
+
 function Home() {
   return (
     <div>
       <CarouselBox className="mb-3" />
 
-
+  
 <Container className="mt-3">
      <CardColumns className="mt-3">
      
-          <Card className="mt-3" style={{ width: '18rem' }}>
+          <Card className="mt-3 bg-info" style={{width: '18rem'}}>
               <Card.Img variant="top" src={pexels} />
               <Card.Body>
                 <Card.Title>Lenovo</Card.Title>
@@ -29,9 +31,9 @@ function Home() {
                 </Card.Text>
               </Card.Body>
               <ListGroup className="list-group-flush">
-                <ListGroupItem>Cras justo odio</ListGroupItem>
-                <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                <ListGroupItem className="bg-info">Cras justo odio</ListGroupItem>
+                <ListGroupItem className="bg-info">Dapibus ac facilisis in</ListGroupItem>
+                <ListGroupItem className="bg-info">Vestibulum at eros</ListGroupItem>
               </ListGroup>
               <Card.Body>
                 <Button className="mr-2" href="#"> <CgDetailsMore style={{fontSize: "20px"}}/> Details</Button>
@@ -39,7 +41,7 @@ function Home() {
               </Card.Body>
           </Card>
 
-          <Card className="mt-3" style={{ width: '18rem' }}>
+          <Card className="mt-3 bg-info" style={{ width: '18rem' }}>
               <Card.Img variant="top" src={pexels} />
               <Card.Body>
                 <Card.Title>Lenovo</Card.Title>
@@ -49,9 +51,9 @@ function Home() {
                 </Card.Text>
               </Card.Body>
               <ListGroup className="list-group-flush">
-                <ListGroupItem>Cras justo odio</ListGroupItem>
-                <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                <ListGroupItem className="bg-info">Cras justo odio</ListGroupItem>
+                <ListGroupItem className="bg-info">Dapibus ac facilisis in</ListGroupItem>
+                <ListGroupItem className="bg-info">Vestibulum at eros</ListGroupItem>
               </ListGroup>
               <Card.Body>
                 <Button className="mr-2" href="#"> <CgDetailsMore style={{fontSize: "20px"}}/> Details</Button>
@@ -59,7 +61,7 @@ function Home() {
               </Card.Body>
           </Card>
 
-          <Card className="mt-3" style={{ width: '18rem' }}>
+          <Card className="mt-3 bg-info" style={{ width: '18rem' }}>
               <Card.Img variant="top" src={pexels} />
               <Card.Body>
                 <Card.Title>Lenovo</Card.Title>
@@ -69,9 +71,9 @@ function Home() {
                 </Card.Text>
               </Card.Body>
               <ListGroup className="list-group-flush">
-                <ListGroupItem>Cras justo odio</ListGroupItem>
-                <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                <ListGroupItem className="bg-info">Cras justo odio</ListGroupItem>
+                <ListGroupItem className="bg-info">Dapibus ac facilisis in</ListGroupItem>
+                <ListGroupItem className="bg-info">Vestibulum at eros</ListGroupItem>
               </ListGroup>
               <Card.Body>
                 <Button className="mr-2" href="#"> <CgDetailsMore style={{fontSize: "20px"}}/> Details</Button>
@@ -79,7 +81,7 @@ function Home() {
               </Card.Body>
           </Card>
 
-          <Card className="mt-3" style={{ width: '18rem' }}>
+          <Card className="mt-3 bg-info" style={{ width: '18rem' }}>
               <Card.Img variant="top" src={pexels} />
               <Card.Body>
                 <Card.Title>Lenovo</Card.Title>
@@ -89,9 +91,9 @@ function Home() {
                 </Card.Text>
               </Card.Body>
               <ListGroup className="list-group-flush">
-                <ListGroupItem>Cras justo odio</ListGroupItem>
-                <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                <ListGroupItem className="bg-info">Cras justo odio</ListGroupItem>
+                <ListGroupItem className="bg-info">Dapibus ac facilisis in</ListGroupItem>
+                <ListGroupItem className="bg-info">Vestibulum at eros</ListGroupItem>
               </ListGroup>
               <Card.Body>
                 <Button className="mr-2" href="#"> <CgDetailsMore style={{fontSize: "20px"}}/> Details</Button>
@@ -99,7 +101,7 @@ function Home() {
               </Card.Body>
           </Card>
 
-          <Card className="mt-3" style={{ width: '18rem' }}>
+          <Card className="mt-3 bg-info" style={{ width: '18rem' }}>
               <Card.Img variant="top" src={pexels} />
               <Card.Body>
                 <Card.Title>Lenovo</Card.Title>
@@ -109,9 +111,9 @@ function Home() {
                 </Card.Text>
               </Card.Body>
               <ListGroup className="list-group-flush">
-                <ListGroupItem>Cras justo odio</ListGroupItem>
-                <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                <ListGroupItem className="bg-info">Cras justo odio</ListGroupItem>
+                <ListGroupItem className="bg-info">Dapibus ac facilisis in</ListGroupItem>
+                <ListGroupItem className="bg-info">Vestibulum at eros</ListGroupItem>
               </ListGroup>
               <Card.Body>
                 <Button className="mr-2" href="#"> <CgDetailsMore style={{fontSize: "20px"}}/> Details</Button>
@@ -119,7 +121,7 @@ function Home() {
               </Card.Body>
           </Card>
 
-          <Card className="mt-3" style={{ width: '18rem' }}>
+          <Card className="mt-3 bg-info" style={{ width: '18rem' }}>
               <Card.Img variant="top" src={pexels} />
               <Card.Body>
                 <Card.Title>Lenovo</Card.Title>
@@ -129,9 +131,9 @@ function Home() {
                 </Card.Text>
               </Card.Body>
               <ListGroup className="list-group-flush">
-                <ListGroupItem>Cras justo odio</ListGroupItem>
-                <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                <ListGroupItem className="bg-info">Cras justo odio</ListGroupItem>
+                <ListGroupItem className="bg-info">Dapibus ac facilisis in</ListGroupItem>
+                <ListGroupItem className="bg-info">Vestibulum at eros</ListGroupItem>
               </ListGroup>
               <Card.Body>
                 <Button className="mr-2" href="#"> <CgDetailsMore style={{fontSize: "20px"}}/> Details</Button>
@@ -139,9 +141,14 @@ function Home() {
               </Card.Body>
           </Card>
 
-
+          
         
+
+
+         
      </CardColumns>
+
+     
       
 
        
@@ -149,8 +156,10 @@ function Home() {
 
 <Container className="mt-3">
 <Footer />
-</Container>
 
+
+</Container>
+ 
      
     </div>
   )
