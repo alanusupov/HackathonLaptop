@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
        <Routes />
-       app js
+    
     </div>
   );
 }

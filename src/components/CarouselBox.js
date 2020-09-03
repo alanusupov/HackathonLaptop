@@ -1,16 +1,14 @@
 import React from 'react'
-import Carousel from 'react-bootstrap'
-import image1 from '../assets/alexander.jpg'
+import Carousel from 'react-bootstrap/Carousel'
+import image1 from '../assets/Carousel.jpg'
 import image2 from '../assets/malte.jpg'
 import image3 from '../assets/marku.jpg'
-import { Container } from 'react-bootstrap'
 
 
-function Carousel() {
+function CarouselBox() {
   return (
-    <Container>
-          <Carousel>
-      <Carousel.Item >
+    <Carousel>
+      <Carousel.Item style={{ height:"500px"}}>
           <img className="d-block w-100" src={image1} alt="forest"/>
           <Carousel.Caption>
               <h3>Forest</h3>
@@ -18,7 +16,7 @@ function Carousel() {
           </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item>
+      <Carousel.Item style={{ height:"500px"}}>
           <img className="d-block w-100" src={image2} alt="forest"/>
           <Carousel.Caption>
               <h3>Forest</h3>
@@ -26,7 +24,7 @@ function Carousel() {
           </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item>
+      <Carousel.Item style={{ height:"500px"}}>
           <img className="d-block w-100" src={image3} alt="forest"/>
           <Carousel.Caption>
               <h3>Forest</h3>
@@ -34,9 +32,7 @@ function Carousel() {
           </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-    </Container>
-    
   )
 }
 
-export default Carousel
+export default CarouselBox

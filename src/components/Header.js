@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <div>
-       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+       <Navbar style={{paddingBottom:"-20px", paddingTop:"-15px"}}  collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Navbar.Brand  href="/home"><BiMeteor style={{fontSize:"40px", marginLeft: "40px"}}/><h4>OurMarket</h4></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -18,7 +18,7 @@ function Header() {
               <NavLink href="/home">Home</NavLink>
               <NavLink href="/about">About us</NavLink>
               <NavLink href="/contacts">Contacts</NavLink>
-              <NavLink href="/address">Address</NavLink>
+              <NavLink href="/payment">Payment</NavLink>
               <NavLink href="/order">Order</NavLink>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -41,8 +41,9 @@ function Header() {
          </Navbar.Collapse>
       </Navbar>
       {/* <Sidebar/> */}
+    
 
-
+     
     </div>
   )
 }
