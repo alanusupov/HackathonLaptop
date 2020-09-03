@@ -17,7 +17,7 @@ function Header() {
             <Nav className="mr-auto">
               <NavLink href="/home">Home</NavLink>
               <NavLink href="/about">About us</NavLink>
-              <NavLink href="/contacts">Contacts</NavLink>
+              {/* <NavLink href="/contacts">Contacts</NavLink> */}
               <NavLink href="/payment">Payment</NavLink>
               <NavLink href="/order">Order</NavLink>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
@@ -33,10 +33,7 @@ function Header() {
               <FormControl type="text" placeholder="Поиск по названию" className="mr-sm-3" />
               <Button variant="outline-primary">Search</Button>
             </Form>
-              <NavLink className="mr-3"  style={{fontSize: "30px"}} href="/dash"><FaCartPlus/></NavLink>
-              <NavLink className="d-flex align-items-center" eventKey={2} href="/registration">
-                Вход / Регистрация
-              </NavLink>
+             
             </Nav>
          </Navbar.Collapse>
       </Navbar>

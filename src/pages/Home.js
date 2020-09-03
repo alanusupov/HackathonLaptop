@@ -13,12 +13,13 @@ function Home() {
   return (
     <div>
       <CarouselBox className="mb-3" />
-      <Product/>
+
+        <Product/>
+        
       <Container className="mt-3">
-      <Footer />
+          <Footer />
+      </Container>
 
-
-    </Container>
  
      
     </div>

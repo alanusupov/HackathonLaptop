@@ -1,14 +1,14 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { GrFacebook, GrTwitter, GrGooglePlus, GrInstagram,GrLinkedin } from "react-icons/gr";
-import Contacts from "../pages/Contacts";
+import { FormText, Form } from "reactstrap";
 
 
 
 
 function FooterPagePro ()  {
   return (
-    <MDBFooter className="page-footer font-small pt-4 mt-4 bg-dark text-white">
+    <MDBFooter className="page-footer font-small pt-4 mt-4 bg-dark text-white ">
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
@@ -24,61 +24,92 @@ function FooterPagePro ()  {
           <hr className="clearfix w-100 d-md-none" />
           <MDBCol md="2">
             <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Links
+              Помощь покупателю
             </h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#!">Link 1</a>
+                <a href="#!">Как сделать заказ</a>
               </li>
+              {<hr/>}
               <li>
-                <a href="#!">Link 2</a>
+                <a href="#!">Оплата</a>
               </li>
+              {<hr/>}
               <li>
-                <a href="#!">Link 3</a>
+                <a href="#!">Доставка</a>
               </li>
+              {<hr/>}
               <li>
-                <a href="#!">Link 4</a>
+                <a href="#!">Сервисная служба</a>
+              </li>
+              {<hr/>}
+              <li>
+                <a href="#!">Обмен и возврат</a>
               </li>
             </ul>
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
           <MDBCol md="2">
             <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Links
+              Методы оплаты
             </h5>
             <ul className="list-unstyled">
+              
               <li>
-                <a href="#!">Link 1</a>
+                <a href="#!">Visa cart</a>
               </li>
+              {<hr/>}
               <li>
-                <a href="#!">Link 2</a>
+                <a href="#!">Master cart</a>
               </li>
+              {<hr/>}
               <li>
-                <a href="#!">Link 3</a>
+                <a href="#!">Union cart</a>
               </li>
+              {<hr/>}
               <li>
-                <a href="#!">Link 4</a>
+                <a href="#!">Credit cart</a>
               </li>
             </ul>
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
           <MDBCol md="2">
             <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Links
+              ИНформация
             </h5>
             <ul className="list-unstyled">
+              <Form>
               <li>
-                <a href="#!">Link 1</a>
+                <a href="#!">Адреса магазинов и пункты выдачи</a>
               </li>
-              <li>
-                <a href="#!">Link 2</a>
+              </Form>
+              {<hr/>}
+
+             <Form>
+             <li>
+                <a href="#!">Контакты</a>
               </li>
-              <li>
-                <a href="#!">Link 3</a>
+             </Form>
+             {<hr/>}
+
+              <Form> <li>
+                <a href="#!">Гарантии</a>
               </li>
-              <li>
-                <a href="#!">Link 4</a>
+              </Form>
+              {<hr/>}
+
+              <Form> <li>
+                <a href="#!">Бонусная программа и Акции</a>
               </li>
+              </Form>
+              {<hr/>}
+
+              <Form><li>
+                <a href="#!">Кредит</a>
+              </li></Form>
+              
+             
+              
             </ul>
           </MDBCol>
         </MDBRow>
@@ -131,7 +162,7 @@ function FooterPagePro ()  {
           &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
         </MDBContainer>
       </div>
-    <Contacts />
+    
     </MDBFooter>
   );
 }
