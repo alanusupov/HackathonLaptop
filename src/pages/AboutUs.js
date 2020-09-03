@@ -1,4 +1,5 @@
 import React from 'react'
+import FooterPagePro from '../components/Footer'
 
 function AboutUs() {
   return (
@@ -7,6 +8,7 @@ function AboutUs() {
       <h1>AboutUs</h1>
       <h1>AboutUs</h1>
       <h1>AboutUs</h1>
+      <FooterPagePro />
     </div>
   )
 }
