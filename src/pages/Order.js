@@ -26,7 +26,7 @@ function addProduct(e){
     async function addData(){
       const res = await Axios.post(url + '/products', data)
       console.log(res);
-      // props.addNewContact(data)
+      props.addNewProduct(data)
       setEmail('');
       setName('')
     }addData();
