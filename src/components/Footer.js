@@ -131,27 +131,27 @@ function FooterPagePro ()  {
       <div className="text-center">
         <ul className="list-unstyled list-inline">
           <li className="list-inline-item">
-            <a className="btn-floating btn-sm btn-fb mx-1">
+            <a href="google.com" className="btn-floating btn-sm btn-fb mx-1">
             <i><GrFacebook style={{fontSize: "40px"}}/></i>
             </a>
           </li>
           <li className="list-inline-item">
-            <a className="btn-floating btn-sm btn-tw mx-1">
+            <a href="google.com" className="btn-floating btn-sm btn-tw mx-1">
             <i><GrTwitter style={{fontSize: "40px"}}/></i>
             </a>
           </li>
           <li className="list-inline-item">
-            <a className="btn-floating btn-sm btn-gplus mx-1">
+            <a href="google.com" className="btn-floating btn-sm btn-gplus mx-1">
             <i><GrGooglePlus style={{fontSize: "40px"}}/></i>
             </a>
           </li>
           <li className="list-inline-item">
-            <a className="btn-floating btn-sm btn-li mx-1">
+            <a href="google.com" className="btn-floating btn-sm btn-li mx-1">
             <i><GrInstagram style={{fontSize: "40px"}}/></i>
             </a>
           </li>
           <li className="list-inline-item">
-            <a className="btn-floating btn-sm btn-dribbble mx-1">
+            <a href="google.com" className="btn-floating btn-sm btn-dribbble mx-1">
             <i><GrLinkedin style={{fontSize: "40px"}}/></i>
             </a>
           </li>
