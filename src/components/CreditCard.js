@@ -26,7 +26,7 @@ export default class PaymentForm extends React.Component {
   
   render() {
     return (
-      <div id="PaymentForm">
+      <div id="PaymentForm" className="mt-3">
         <Cards
           cvc={this.state.cvc}
           expiry={this.state.expiry}

@@ -9,6 +9,9 @@ import {getProduct, addNewProduct} from '../redux/Action'
 import Axios from 'axios';
 import { url } from '../url/url';
 
+import styles from '../pages/button.module.css';
+
+
 
 function Product({ getProduct , ...props }) {
   useEffect(()=>{
@@ -28,7 +31,7 @@ function Product({ getProduct , ...props }) {
       <CardColumns className="mt-3">
      {props.products ? props.products.map((product) => (
        <Card  className="mt-3 bg-info" style={{width: '18rem'}}>
-         <Card.Img variant="top" src={pexels} />
+         <Card.Img variant="top"  src={pexels} />
          <Card.Body>
      <Card.Title>{product.product}</Card.Title>
            <Card.Text>
@@ -41,8 +44,8 @@ function Product({ getProduct , ...props }) {
            <ListGroupItem className="bg-info">Vestibulum at eros</ListGroupItem>
          </ListGroup>
          <Card.Body>
-           <Button className="mr-2" href="#"> <CgDetailsMore style={{fontSize: "20px"}}/> Details</Button>
-           <Button href="#"> <FaCartPlus style={{fontSize: "20px"}}/> Add to cart</Button>
+           <Button className={styles.button} style={{marginRight: "10px"}} href="#"> <CgDetailsMore style={{fontSize: "20px"}}/> Details</Button>
+           <Button className={styles.button} href="#"> <FaCartPlus style={{fontSize: "20px"}}/> Add to cart</Button>
          </Card.Body>
      </Card>  
      )):<p>Product List Is Empty</p> }
