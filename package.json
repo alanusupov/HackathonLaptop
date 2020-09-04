@@ -25,6 +25,7 @@
     "react-scripts": "3.4.3",
     "reactstrap": "^8.5.1",
     "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
     "rsuite": "^4.8.1",
     "thunk": "^0.0.1"
   },

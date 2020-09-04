@@ -5,6 +5,7 @@ import AboutUs from '../pages/AboutUs'
 import Layout from '../components/Layout'
 import Order from '../pages/Order'
 import Payment from '../pages/Payment'
+import Cart from '../components/Cart'
 
 import Lenovo from '../pages/DropdownProducts/Lenovo'
 import Asus from '../pages/DropdownProducts/Asus'
@@ -22,6 +23,8 @@ function Routes () {
             <Route exact path="/payment" component={Payment}/>
             <Route exact path="/about" component={AboutUs}/>
             <Route exact path="/order" component={Order}/>
+            <Route exact path="/cart" component={Cart}/>
+
 
             <Route exact path="/lenovo" component={Lenovo}/>
             <Route exact path="/asus" component={Asus}/>

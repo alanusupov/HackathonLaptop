@@ -12,6 +12,8 @@ function Order(props) {
   const [number, setNumber] = useState('');
   const [product, setProduct] = useState('');
   const [price, setPrice] = useState('');
+  const [image, setImage] = useState('');
+  const [info, setInfo] = useState('');
 
 
 function addProduct(e){
@@ -22,7 +24,9 @@ function addProduct(e){
     number,
     email,
     product,
-    price
+    price,
+    info,
+    image
   }
   if(name !== '' && email !== ''){
     async function addData(){
@@ -30,7 +34,12 @@ function addProduct(e){
       console.log(res);
       props.addNewProduct(data)
       setEmail('');
-      setName('')
+      setName('');
+      setNumber('');
+      setPrice('');
+      setProduct('');
+      setInfo('');
+      setImage('');
     }addData();
   }
 }
@@ -68,14 +77,28 @@ function addProduct(e){
         <Input 
         value={product} 
         onChange={(e)=> setProduct(e.target.value)} 
-        type="product" name="product" id="Product Name" placeholder="Enter the Product Name" />
+        type="text" name="product" id="Product Name" placeholder="Enter the Product Name" />
       </FormGroup>
       <FormGroup>
         <Label for="price">Price</Label>
         <Input 
         value={price}
          onChange={(e)=> setPrice(e.target.value)} 
-         type="price" name="price" id="price" placeholder="Enter the Price" />
+         type="text" name="price" id="price" placeholder="Enter the Price" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="info">Product Info</Label>
+        <Input 
+        value={info}
+         onChange={(e)=> setInfo(e.target.value)} 
+         type="text" name="info" id="info" placeholder="Enter the Product Information" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="image">Image URL</Label>
+        <Input 
+        value={image}
+         onChange={(e)=> setImage(e.target.value)} 
+         type="text" required name="image" id="image" placeholder="Enter the Image URL" />
       </FormGroup>
       
       <Button type="submit">Submit</Button>

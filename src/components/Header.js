@@ -37,6 +37,10 @@ function Header () {
               <FormControl type="text" placeholder="Поиск по названию" className="mr-sm-3" />
               <Button variant="outline-primary">Search</Button>
             </Form>
+              <Link className="mr-3 nav-link"  style={{fontSize: "30px"}} to="/cart"><FaCartPlus/></Link>
+              <NavLink className="d-flex align-items-center" eventKey={2} href="/registration">
+                Вход / Регистрация
+              </NavLink>
              
             </Nav>
          </Navbar.Collapse>
