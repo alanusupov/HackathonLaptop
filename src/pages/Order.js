@@ -4,6 +4,8 @@ import Axios from 'axios';
 import {url} from '../url/url'
 import { connect } from 'react-redux';
 import {addNewProduct} from '../redux/Action'
+import FooterPagePro from '../components/Footer';
+// import FooterPagePro from '../components/Footer';
 function Order(props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -45,7 +47,9 @@ function addProduct(e){
 
 
   return (
-    <Container>
+    
+    <div>
+        <Container>
       <Form onSubmit={(e)=>addProduct(e)}>
       <FormGroup>
         <Label for="name">Name</Label>
@@ -101,6 +105,15 @@ function addProduct(e){
     </Form>
 
     </Container>
+   
+       
+   <div>
+     <FooterPagePro/>
+   </div>
+    </div>
+    
+    
+  
     
   )
 }

@@ -1,35 +1,38 @@
 import { BiMeteor } from "react-icons/bi";
 import { FaCartPlus } from "react-icons/fa";
-import React from 'react';
-import { Navbar, Nav, NavLink, Form,FormControl,Button} from 'react-bootstrap';
-import { Link } from "react-router-dom";
+import { Navbar, Nav, Form,FormControl,Button, NavDropdown} from 'react-bootstrap';
 // import Sidebar from "./Sidebar";
+import React from 'react'
+import {Link} from 'react-router-dom'
 
-
-
-function Header() {
-
+function Header () {
   return (
     <div>
        <Navbar style={{paddingBottom:"-20px", paddingTop:"-15px"}}  collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <Navbar.Brand  href="/home"><BiMeteor style={{fontSize:"40px", marginLeft: "40px"}}/><h4>OurMarket</h4></Navbar.Brand>
+          <Link  to="/home"><BiMeteor style={{fontSize:"40px", marginLeft: "40px"}}/><h4>OurMarket</h4></Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <NavLink href="/home">Home</NavLink>
-              <NavLink href="/about">About us</NavLink>
-              <NavLink href="/contacts">Contacts</NavLink>
-              <NavLink href="/payment">Payment</NavLink>
-              <NavLink href="/order">Order</NavLink>
-              {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-              </NavDropdown> */}
+              <Link className="nav-link" to="/home">Home</Link>
+              <Link className="nav-link" to="/about">About us</Link>
+              <Link className="nav-link" to="/payment">Payment</Link>
+              <Link className="nav-link" to="/order">Order</Link>
+
+              <NavDropdown title="Каталог товаров" id="collasible-nav-dropdown">
+                <NavDropdown.Item> <Link className="nav-link" to="/lenovo"></Link>Lenovo </NavDropdown.Item>
+                <NavDropdown.Item> <Link className="nav-link" to="/asus"></Link>Asus</NavDropdown.Item>
+                <NavDropdown.Item> <Link className="nav-link" to="/microsoft"></Link>Microsoft</NavDropdown.Item>
+                {/* <NavDropdown.Divider /> */}
+                <NavDropdown.Item> <Link className="nav-link" to="/hp"></Link>HP</NavDropdown.Item>
+              </NavDropdown>
             </Nav>
             <Nav>
+
+                {/*====== Cart section =====*/}
+
+            <Form>
+            <Link style={{ color:"white"}} to="/cart">Мои заказы <FaCartPlus style={{fontSize: "60px", paddingRight: "30px", color:"white"}}/> </Link>
+            </Form>
             <Form inline className="mr-3">
               <FormControl type="text" placeholder="Поиск по названию" className="mr-sm-3" />
               <Button variant="outline-primary">Search</Button>
@@ -38,13 +41,11 @@ function Header() {
               <NavLink className="d-flex align-items-center" eventKey={2} href="/registration">
                 Вход / Регистрация
               </NavLink>
+             
             </Nav>
          </Navbar.Collapse>
       </Navbar>
-      {/* <Sidebar/> */}
-    
-
-     
+      {/* <Sidebar/> */} 
     </div>
   )
 }
