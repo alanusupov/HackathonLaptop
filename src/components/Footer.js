@@ -2,7 +2,9 @@ import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { GrFacebook, GrTwitter, GrGooglePlus, GrInstagram,GrLinkedin } from "react-icons/gr";
 import { FormText, Form } from "reactstrap";
-
+import { RiVisaFill } from 'react-icons/ri';
+import { SiQiwi } from 'react-icons/si';
+import { FaCcMastercard, FaRegCreditCard, FaCcPaypal } from 'react-icons/fa';
 
 
 
@@ -13,12 +15,11 @@ function FooterPagePro ()  {
         <MDBRow>
           <MDBCol md="6">
             <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Footer Content
+              Our mission
             </h5>
             <p>
-              Here you can use rows and columns here to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
+            Our mission is to build digital products that last. By being reasonable product craftsmen, we're able to avoid surprises and focus on the quality of the software we deliver.{<hr/>}
+            What helps us achieve it is our goal to become the no. 1 JavaScript software development company in the world by focusing on one technology, supporting the ecosystem (open source). We're eager to help technology driven companies achieve their business goals with our help. All that is possible thanks to our great team.
             </p>
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
@@ -56,19 +57,23 @@ function FooterPagePro ()  {
             <ul className="list-unstyled">
               
               <li>
-                <a href="#!">Visa cart</a>
+                <a href="#!"> <RiVisaFill style={{fontSize:"40px", marginRight:"5px"}}/> Visa cart</a>
               </li>
               {<hr/>}
               <li>
-                <a href="#!">Master cart</a>
+                <a href="#!"> <FaCcMastercard style={{fontSize:"40px", marginRight:"5px"}} /> Master cart</a>
               </li>
               {<hr/>}
               <li>
-                <a href="#!">Union cart</a>
+                <a href="#!"> <FaRegCreditCard style={{fontSize:"40px", marginRight:"5px"}} /> Credit cart</a>
               </li>
               {<hr/>}
               <li>
-                <a href="#!">Credit cart</a>
+                <a href="#!"> <SiQiwi style={{fontSize:"40px", marginRight:"5px"}} /> Qiwi wallet</a>
+              </li>
+              {<hr/>}
+              <li>
+                <a href="#!"> <FaCcPaypal style={{fontSize:"40px", marginRight:"5px"}} /> Paypal</a>
               </li>
             </ul>
           </MDBCol>
@@ -159,7 +164,7 @@ function FooterPagePro ()  {
       </div>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+          &copy; {new Date().getFullYear()} Bishkek/312: <a href="https://www.Bishkek/312.com"> Alan, Marat, Meerim </a>
         </MDBContainer>
       </div>
     

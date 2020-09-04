@@ -11,16 +11,16 @@ import Product from './Product';
 
 function Home() {
   return (
-    <div>
+    <div style={{backgroundColor: "silver"}}>
       <CarouselBox className="mb-3" />
 
         <Product/>
         
       <Container className="mt-3">
-          <Footer />
+          
       </Container>
 
- 
+      <Footer />
      
     </div>
   )
