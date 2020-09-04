@@ -6,6 +6,7 @@ import Contacts from '../pages/Contacts'
 import Layout from '../components/Layout'
 import Order from '../pages/Order'
 import Payment from '../pages/Payment'
+import Cart from '../components/Cart'
 
 
 
@@ -20,6 +21,8 @@ function Routes () {
             <Route exact path="/payment" component={Payment}/>
             <Route exact path="/about" component={AboutUs}/>
             <Route exact path="/order" component={Order}/>
+            <Route exact path="/cart" component={Cart}/>
+
            </Layout>
         </Switch>
      </BrowserRouter>

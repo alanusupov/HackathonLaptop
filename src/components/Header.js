@@ -2,6 +2,7 @@ import { BiMeteor } from "react-icons/bi";
 import { FaCartPlus } from "react-icons/fa";
 import React from 'react';
 import { Navbar, Nav, NavLink, Form,FormControl,Button} from 'react-bootstrap';
+import { Link } from "react-router-dom";
 // import Sidebar from "./Sidebar";
 
 
@@ -33,7 +34,7 @@ function Header() {
               <FormControl type="text" placeholder="Поиск по названию" className="mr-sm-3" />
               <Button variant="outline-primary">Search</Button>
             </Form>
-              <NavLink className="mr-3"  style={{fontSize: "30px"}} href="/dash"><FaCartPlus/></NavLink>
+              <Link className="mr-3 nav-link"  style={{fontSize: "30px"}} to="/cart"><FaCartPlus/></Link>
               <NavLink className="d-flex align-items-center" eventKey={2} href="/registration">
                 Вход / Регистрация
               </NavLink>
