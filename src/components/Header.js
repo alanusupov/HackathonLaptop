@@ -9,7 +9,7 @@ function Header () {
   return (
     <div>
        <Navbar style={{paddingBottom:"-20px", paddingTop:"-15px"}}  collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <Link  to="/home"><BiMeteor style={{fontSize:"40px", marginLeft: "40px"}}/><h4>OurMarket</h4></Link>
+          <Link  to="/home"><BiMeteor style={{fontSize:"40px", marginLeft: "40px"}}/><h4>LaptopKG</h4></Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
